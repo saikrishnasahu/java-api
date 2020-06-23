@@ -1,0 +1,7 @@
+Naming Thread
+The Thread class provides methods to change and get the name of a thread.
+By default, each thread has a name i.e. thread-0, thread-1 and so on.
+By we can change the name of the thread by using setName() method.
+
+Current Thread
+The currentThread() method returns a reference of currently executing thread.

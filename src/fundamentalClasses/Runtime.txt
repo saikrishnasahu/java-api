@@ -1,0 +1,17 @@
+Every Java application has a single instance of class Runtime that allows the application
+to interface with the environment in which the application is running.
+The current runtime can be obtained from the getRuntime method.
+
+Methods of Java Runtime class :
+
+public static Runtime getRuntime() : This method returns the instance or Runtime object associated with the current Java application.
+
+public long freeMemory() : This method returns the amount of free memory in the JVM(Java Virtual Machine)
+
+public long totalMemory() : This method returns the amount of total memory in the JVM(Java Virtual Machine)
+
+public int availableProcessors() : This method returns the number of processors available to the JVM (Java virtual machine)
+
+public void gc() : This method runs the garbage collector.
+Calling this method suggests that the Java virtual machine expend effort toward recycling unused objects
+in order to make the memory they currently occupy available for quick reuse.

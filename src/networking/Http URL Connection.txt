@@ -1,0 +1,9 @@
+The Java HttpURLConnection class is http specific URLConnection. It works for HTTP protocol only.
+By the help of HttpURLConnection class, you can information of any HTTP URL
+such as header information, status code, response code etc.
+The java.net.HttpURLConnection is subclass of URLConnection class.
+
+How to get the object of HttpURLConnection class
+The openConnection() method of URL class returns the object of URLConnection class.
+
+Java HttpURLConnecton Example

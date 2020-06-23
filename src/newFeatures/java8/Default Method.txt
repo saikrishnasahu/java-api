@@ -1,0 +1,12 @@
+Java provides a facility to create default methods inside the interface.
+Methods which are defined inside the interface and tagged with default are known as default methods.
+These methods are non-abstract methods.
+
+Static Methods inside Java 8 Interface
+You can also define static methods inside the interface.
+Static methods are used to define utility methods.
+
+Abstract Class vs Java 8 Interface
+After having default and static methods inside the interface, we think about the need of abstract class in Java.
+An interface and an abstract class is almost similar except that you can create constructor in the abstract class
+whereas you can't do this in interface.

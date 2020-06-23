@@ -1,0 +1,2 @@
+Java added a new feature Binary Literal in Java 7. It allows you to express integral types (byte, short, int, and long) in binary number system.
+To specify a binary literal, add the prefix 0b or 0B to the integral value.

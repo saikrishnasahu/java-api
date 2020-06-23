@@ -1,0 +1,24 @@
+Java I/O (Input and Output) is used to process the input and produce the output.
+Java uses the concept of a stream to make I/O operation fast.
+The java.io package contains all the classes required for input and output operations.
+We can perform file handling in Java by Java I/O API.
+
+Stream
+A stream is a sequence of data. In Java, a stream is composed of bytes.
+It's called a stream because it is like a stream of water that continues to flow.
+In Java, 3 streams are created for us automatically. All these streams are attached with the console.
+System.out: standard output stream
+System.in: standard input stream
+System.err: standard error stream
+
+OutputStream vs InputStream
+
+OutputStream
+Java application uses an output stream to write data to a destination;
+it may be a file, an array, peripheral device or socket.
+OutputStream class is an abstract class. It is the superclass of all classes representing an output stream of bytes.
+An output stream accepts output bytes and sends them to some sink.
+
+InputStream
+Java application uses an input stream to read data from a source; it may be a file, an array, peripheral device or socket.
+InputStream class is an abstract class. It is the superclass of all classes representing an input stream of bytes.

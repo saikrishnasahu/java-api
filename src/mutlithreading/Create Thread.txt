@@ -1,0 +1,22 @@
+There are two ways to create a thread:
+
+By extending Thread class
+By implementing Runnable interface.
+
+Thread class:
+Thread class provide constructors and methods to create and perform operations on a thread.
+Thread class extends Object class and implements Runnable interface.
+
+Runnable interface:
+The Runnable interface should be implemented by any class whose instances are intended to be executed by a thread.
+Runnable interface have only one method named run().
+
+Starting a thread:
+start() method of Thread class is used to start a newly created thread. It performs following tasks:
+A new thread starts(with new callstack).
+The thread moves from New state to the Runnable state.
+When the thread gets a chance to execute, its target run() method will run.
+
+If you are not extending the Thread class,your class object would not be treated as a thread object.
+So you need to explicitly create Thread class object.We are passing the object of your class that implements Runnable
+so that your class run() method may execute.

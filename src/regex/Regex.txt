@@ -1,0 +1,32 @@
+The Java Regex or Regular Expression is an API to define a pattern for searching or manipulating strings.
+It is widely used to define the constraint on strings such as password and email validation.
+
+Java Regex API provides 1 interface and 3 classes in java.util.regex package.
+The Matcher and Pattern classes provide the facility of Java regular expression.
+MatchResult interface
+Matcher class
+Pattern class
+PatternSyntaxException class
+
+Regex Quantifiers
+The quantifiers specify the number of occurrences of a character.
+Regex	    Description
+X?	        X occurs once or not at all
+X+	        X occurs once or more times
+X*	        X occurs zero or more times
+X{n}	    X occurs n times only
+X{n,}	    X occurs n or more times
+X{y,z}	    X occurs at least y times but less than z times
+
+Regex Metacharacters
+The regular expression metacharacters work as shortcodes.
+Regex	Description
+.	    Any character (may or may not match terminator)
+\d	    Any digits, short of [0-9]
+\D	    Any non-digit, short for [^0-9]
+\s	    Any whitespace character, short for [\t\n\x0B\f\r]
+\S	    Any non-whitespace character, short for [^\s]
+\w	    Any word character, short for [a-zA-Z_0-9]
+\W	    Any non-word character, short for [^\w]
+\b	    A word boundary
+\B	    A non word boundary

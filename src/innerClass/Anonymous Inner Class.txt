@@ -1,0 +1,15 @@
+A class that have no name is known as anonymous inner class in java.
+It should be used if you have to override method of class or interface.
+
+Java Anonymous inner class can be created by two ways:
+
+Class (may be abstract or concrete).
+Interface
+
+Internal working of given code
+A class is created but its name is decided by the compiler which extends the Person class and provides the implementation of the eat() method.
+An object of Anonymous class is created that is referred by p reference variable of Person type.
+
+Java anonymous inner class example using interface
+A class is created but its name is decided by the compiler which implements the Eatable interface and provides the implementation of the eat() method.
+An object of Anonymous class is created that is referred by e reference variable of Eatable type.

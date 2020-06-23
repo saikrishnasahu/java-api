@@ -1,0 +1,24 @@
+The Java throw keyword is used to explicitly throw an exception.
+We can throw either checked or unchecked exception in java by throw keyword.
+The throw keyword is mainly used to throw custom exception.
+
+The Java throws keyword is used to declare an exception.
+It gives an information to the programmer that there may occur an exception so it is better for the programmer
+to provide the exception handling code so that normal flow can be maintained.
+Exception Handling is mainly used to handle the checked exceptions.
+If there occurs any unchecked exception such as NullPointerException, it is programmers fault that he is not performing check up before the code being used.
+
+Advantage of Java throws keyword
+Now Checked Exception can be propagated (forwarded in call stack).
+It provides information to the caller of the method about the exception.
+Rule: If you are calling a method that declares an exception, you must either caught or declare the exception.
+There are two cases:
+Case1:You caught the exception i.e. handle the exception using try/catch.
+Case2:You declare the exception i.e. specifying throws with the method.
+
+Case1: You handle the exception
+In case you handle the exception, the code will be executed fine whether exception occurs during the program or not.
+
+Case2: You declare the exception
+A)In case you declare the exception, if exception does not occur, the code will be executed fine.
+B)In case you declare the exception if exception occurs, an exception will be thrown at runtime because throws does not handle the exception.

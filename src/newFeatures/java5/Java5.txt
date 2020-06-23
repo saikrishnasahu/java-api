@@ -1,0 +1,12 @@
+J2SE 5 Features
+The important features of J2SE 5 are generics and assertions.
+Others are auto-boxing, enum, var-args, static import, for-each loop (enhanced for loop) etc.
+
+For-each loop
+Varargs
+Static Import
+Autoboxing and Unboxing
+Enum
+Covariant Return Type
+Annotation
+Generics

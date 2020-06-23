@@ -1,0 +1,23 @@
+We can sort the elements of:
+String objects
+Wrapper class objects
+User-defined class objects
+
+Collections class provides static methods for sorting the elements of a collection.
+If collection elements are of a Set type, we can use TreeSet.
+However, we cannot sort the elements of List.
+Collections class provides methods for sorting the elements of List type elements.
+
+Note: String class and Wrapper classes implement the Comparable interface.
+So if you store the objects of string or wrapper classes, it will be Comparable.
+
+Comparable Interface
+Comparable interface is used to order the objects of the user-defined class.
+This interface is found in java.lang package and contains only one method named compareTo(Object).
+It provides a single sorting sequence only, i.e., you can sort the elements on the basis of single data member only.
+
+Comparator Interface
+Comparator interface is used to order the objects of a user-defined class.
+This interface is found in java.util package and contains 2 methods compare(Object obj1,Object obj2)
+and equals(Object element).
+It provides multiple sorting sequences, i.e., you can sort the elements on the basis of any data member.

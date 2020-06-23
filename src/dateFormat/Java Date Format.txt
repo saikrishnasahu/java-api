@@ -1,0 +1,13 @@
+There are two classes for formatting date in java: DateFormat and SimpleDateFormat.
+
+The java.text.DateFormat class provides various methods to format and parse date and time in java in language independent manner.
+The DateFormat class is an abstract class. java.text.
+Format is the parent class and java.text.SimpleDateFormat is the subclass of java.text.DateFormat class.
+
+In java, converting date into string is called formatting and vice-versa parsing.
+In other words, formatting means date to string and parsing means string to date.
+
+The java.text.SimpleDateFormat class provides methods to format and parse date and time in java.
+The SimpleDateFormat is a concrete class for formatting and parsing date which inherits java.text.DateFormat class.
+Notice that formatting means converting date to string and parsing means converting string to date.
+Note: M (capital M) represents month and m (small m) represents minute in java.

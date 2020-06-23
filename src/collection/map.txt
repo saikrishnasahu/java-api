@@ -1,0 +1,46 @@
+A map contains values on the basis of key, i.e. key and value pair.
+Each key and value pair is known as an entry. A Map contains unique keys.
+A Map is useful if you have to search, update or delete elements on the basis of a key.
+
+Map.Entry Interface
+Entry is the sub interface of Map. So we will be accessed it by Map.Entry name.
+It returns a collection-view of the map, whose elements are of this class. It provides methods to get key and value.
+
+HashMap Class
+HashMap class implements the Map interface which allows us to store key and value pair, where keys should be unique.
+If you try to insert the duplicate key, it will replace the element of the corresponding key.
+It is easy to perform operations using the key index like updation, deletion, etc.
+HashMap class is found in the java.util package.
+HashMap in Java is like the legacy Hashtable class, but it is not synchronized.
+It allows us to store the null elements as well, but there should be only one null key.
+Since Java 5, it is denoted as HashMap<K,V>, where K stands for key and V for value.
+It inherits the AbstractMap class and implements the Map interface.
+
+LinkedHashMap Class
+LinkedHashMap class is Hashtable and Linked list implementation of the Map interface,
+with predictable iteration order. It inherits HashMap class and implements the Map interface.
+LinkedHashMap contains values based on the key.
+LinkedHashMap contains unique elements.
+LinkedHashMap may have one null key and multiple null values.
+LinkedHashMap is non synchronized.
+LinkedHashMap maintains insertion order.
+The initial default capacity of Java HashMap class is 16 with a load factor of 0.75.
+
+TreeMap Class
+TreeMap class is a red-black tree based implementation.
+It provides an efficient means of storing key-value pairs in sorted order.
+TreeMap contains values based on the key. It implements the NavigableMap interface and extends AbstractMap class.
+TreeMap contains only unique elements.
+TreeMap cannot have a null key but can have multiple null values.
+TreeMap is non synchronized.
+TreeMap maintains ascending order.
+
+Hashtable Class
+Hashtable class implements a hashtable, which maps keys to values.
+It inherits Dictionary class and implements the Map interface.
+A Hashtable is an array of a list. Each list is known as a bucket.
+The position of the bucket is identified by calling the hashcode() method. A Hashtable contains values based on the key.
+Hashtable class contains unique elements.
+Hashtable class doesn't allow null key or value.
+Hashtable class is synchronized.
+The initial default capacity of Hashtable class is 11 whereas loadFactor is 0.75.

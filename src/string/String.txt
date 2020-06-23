@@ -1,0 +1,82 @@
+In Java, string is basically an object that represents sequence of char values. An array of characters works same as Java string.
+Java String class provides a lot of methods to perform operations on strings such as compare(), concat(),
+equals(), split(), length(), replace(), compareTo(), intern(), substring().
+The java.lang.String class implements Serializable, Comparable and CharSequence interfaces.
+The Java String is immutable which means it cannot be changed.
+Whenever we change any string, a new instance is created.
+For mutable strings, you can use StringBuffer and StringBuilder classes.
+
+There are two ways to create String object:
+By string literal
+By new keyword
+
+String Literal
+Java String literal is created by using double quotes.
+Each time you create a string literal, the JVM checks the "string constant pool" first.
+If the string already exists in the pool, a reference to the pooled instance is returned.
+If the string doesn't exist in the pool, a new string instance is created and placed in the pool.
+
+Java string literal
+Firstly, JVM will not find any string object with the value "Welcome" in string constant pool, that is why it will create a new object.
+After that it will find the string with the value "Welcome" in the pool, it will not create a new object but will return the reference to the same instance.
+Note: String objects are stored in a special memory area known as the "string constant pool".
+
+By new keyword
+In such case, JVM will create a new string object in normal (non-pool) heap memory,
+and the literal "Welcome" will be placed in the string constant pool.
+The variable s will refer to the object in a heap (non-pool).
+
+Immutable String in Java
+In java, string objects are immutable. Immutable simply means unmodifiable or unchangeable.
+Once string object is created its data or state can't be changed but a new string object is created.
+
+There are three ways to compare string in java:
+By equals() method
+By = = operator
+By compareTo() method
+
+String compare by equals() method
+The String equals() method compares the original content of the string. It compares values of string for equality. String class provides two methods:
+public boolean equals(Object another) compares this string to the specified object.
+public boolean equalsIgnoreCase(String another) compares this String to another string, ignoring case.
+
+String compare by == operator
+The == operator compares references not values.
+
+String compare by compareTo() method
+The String compareTo() method compares values lexicographically and returns an integer value that describes if first
+string is less than, equal to or greater than second string.
+
+In java, string concatenation forms a new string that is the combination of multiple strings. There are two ways to concat string in java:
+By + (string concatenation) operator
+By concat() method
+
+String Concatenation by + (string concatenation) operator
+Java string concatenation operator (+) is used to add strings.
+In java, String concatenation is implemented through the StringBuilder (or StringBuffer) class and its append method.
+String concatenation operator produces a new string by appending the second operand onto the end of the first operand.
+The string concatenation operator can concat not only string but primitive values also.
+Note: After a string literal, all the + will be treated as string concatenation operator.
+
+String Concatenation by concat() method
+The String concat() method concatenates the specified string to the end of current string.
+
+A part of string is called substring. In other words, substring is a subset of another string.
+In case of substring startIndex is inclusive and endIndex is exclusive.
+Note: Index starts from 0.
+You can get substring from the given string object by one of the two methods:
+
+public String substring(int startIndex): This method returns new String object containing the substring of the given string
+from specified startIndex (inclusive).
+public String substring(int startIndex, int endIndex): This method returns new String object containing the substring
+of the given string from specified startIndex to endIndex.
+In case of string:
+startIndex: inclusive
+endIndex: exclusive
+
+Java StringBuffer class is used to create mutable (modifiable) string.
+The StringBuffer class in java is same as String class except it is mutable i.e. it can be changed.
+Note: Java StringBuffer class is thread-safe i.e. multiple threads cannot access it simultaneously. So it is safe and will result in an order.
+
+Java StringBuilder class is used to create mutable (modifiable) string.
+The Java StringBuilder class is same as StringBuffer class except that it is non-synchronized. It is available since JDK 1.5.

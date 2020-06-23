@@ -1,0 +1,19 @@
+The java.lang.System class contains several useful class fields and methods.
+It cannot be instantiated.
+
+Facilities provided by System −
+standard output
+error output streams
+standard input and access to externally defined properties and environment variables.
+A utility method for quickly copying a portion of an array.
+a means of loading files and libraries
+
+Class Declaration
+Following is the declaration for java.lang.System class −
+public final class System extends Object
+
+Field
+Following are the fields for java.lang.System class −
+static PrintStream err − This is the "standard" error output stream.
+static InputStream in − This is the "standard" input stream.
+static PrintStream out − This is the "standard" output stream.

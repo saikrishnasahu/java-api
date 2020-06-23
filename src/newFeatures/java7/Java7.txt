@@ -1,0 +1,8 @@
+JavaSE 7 Features
+The important features of JavaSE 7 are try with resource, catching multiple exceptions etc.
+
+String in switch statement
+Binary Literals
+The try-with-resources
+Caching Multiple Exceptions by single catch
+Underscores in Numeric Literals

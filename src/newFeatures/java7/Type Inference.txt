@@ -1,0 +1,5 @@
+In Java 7, Java provides improved compiler which is enough smart to infer the type of generic instance.
+Now, you can replace the type arguments with an empty set of type parameters (<>). This pair of angle brackets is informally called the diamond.
+
+Type Inference and Generic Constructors
+You can create generic constructor in both generic and non-generic classes. In the following example, we have created a generic type constructor.

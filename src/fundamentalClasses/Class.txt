@@ -1,0 +1,46 @@
+Java provides a class with name Class in java.lang package.
+Instances of the class Class represent classes and interfaces in a running Java application.
+The primitive Java types (boolean, byte, char, short, int, long, float, and double), and the keyword void are also represented as Class objects.
+It has no public constructor. Class objects are constructed automatically by the Java Virtual Machine(JVM).
+It is a final class, so we cannot extend it.
+The Class class methods are widely used in Reflection API.
+
+Creating a Class object
+
+There are three ways to create Class object :
+
+Class.forName(“className”) : Since class Class doesn’t contain any constructor, there is static factory method present in class Class, which is Class.forName() , used for creating object of class Class. Below is the syntax :
+Class c = Class.forName(String className)
+The above statement creates the Class object for the class passed as a String argument(className). Note that the parameter className must be fully qualified name of the desired class for which Class object is to be created. The methods in any class in java which returns the same class object are also known as factory methods. The class name for which Class object is to be created is determined at run-time.
+
+A.class : When we write .class after a class name, it references the Class object that represents the given class.
+It is mostly used with primitive data types and only when we know the name of class.
+The class name for which Class object is to be created is determined at compile-time.
+Please note that this method is used with class name, not with class instances.
+
+obj.getClass() : This method is present in Object class. It return the run-time class of this(obj) object.
+
+Methods:
+
+String toString() : This method converts the Class object to a string.
+It returns the string representation which is the string “class” or “interface”, followed by a space, and then by the fully qualified name of the class.
+If the Class object represents a primitive type, then this method returns the name of the primitive type and if it represents void then it returns “void”.
+
+Class<?> forName(String className) : As discussed earlier, this method returns the Class object associated with the class
+or interface with the given string name. The other variant of this method is discussed next.
+
+T newInstance() : This method creates a new instance of the class represented by this Class object.
+The class is created as if by a new expression with an empty argument list.
+The class is initialized if it has not already been initialized.
+
+boolean isInstance(Object obj) : This method determines if the specified Object is assignment-compatible with the object represented by this Class.
+It is equivalent to instanceof operator in java.
+
+boolean isInterface() : This method determines if the specified Class object represents an interface type.
+
+boolean isPrimitive() : This method determines if the specified Class object represents a primitive type.
+
+boolean isArray() : This method determines if the specified Class object represents an array class.
+
+boolean isAnonymousClass() : This method returns true if and only if the this class is an anonymous class.
+A anonymous class is a like a local classes except that they do not have a name.

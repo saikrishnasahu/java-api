@@ -1,0 +1,6 @@
+Type inference is a feature of Java which provides ability to compiler to look at each method invocation and
+corresponding declaration to determine the type of arguments.
+Java provides improved version of type inference in Java 8.
+In Java 8, you can call specialized method without explicitly mentioning of type of arguments.
+You can use type inference with generic classes and methods.
+You can also create your own custom generic class and methods. In the following example, we are creating our own generic class and method.
